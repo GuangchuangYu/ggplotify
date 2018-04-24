@@ -13,14 +13,14 @@
 
 # History
 
-## embed base to grid plot (2015)
+## embed base to grid plot (2015, ChIPseeker)
 
 I figured out a way to embed base plot (`vennpie`) to grid plot (`upset`) when
 developing `upsetplot` function in `ChIPseeker` package for visualizing overlap
 of ChIPseq data in
 2015, <http://guangchuangyu.github.io/2015/07/upsetplot-in-chipseeker/>.
 
-## embed ggplot (2015)
+## embed ggplot (2015, ggtree and ggimage)
 
 I developed a `subview` function in `ggtree` package in 2015, for embeding
 subplots,
@@ -29,7 +29,7 @@ subplots,
 This function was re-implemented as `geom_subview` and packed in the `ggimage`
 package.
 
-## embed plots (base, lattic, ggplot or image) to ggplot (2017)
+## embed plots (base, lattic, ggplot or image) to ggplot (2017, ggimage and hexSticker)
 
 In the early of 2017, I started to develop R script to produce `ggtree` sticker.
 @lgatto first came out with an idea of makeing an R package for producing hex
@@ -42,7 +42,7 @@ with base plot, lattice, ggplot2 and image file supported as subplot, which was
 actually implemented in `ggimage` (`toGrob` function).
 
 
-## convert base to grob (2018)
+## convert base to grob (2018, base2grob)
 
 I wrote a blog
 post, <http://guangchuangyu.github.io/cn/2018/03/five-questions-of-meme/>, to
@@ -60,14 +60,14 @@ with the fact that I already have source code to convert base plot to `grob`
 object (`ggimage:::toGrob`). Then I developed the `base2grob` package and submit
 it to CRAN.
 
-## convert (almost all) plots to ggplot (2018)
+## convert (almost all) plots to ggplot (2018, ggplotify)
 
 I wrote a blog post, http://guangchuangyu.github.io/cn/2018/04/ggvenn/, to
-introduce `ggvenn` (in `yyplot` package, only in GitHub) function, and started
+introduce `ggvenn` function (in `yyplot` package, only available on GitHub), and started
 to play with the `UpSetR` package. I believe `upset` plot contains too much
-empty space and can embed a `venn` plot. I created a
+empty space and can embed a `venn` plot as I did in 2015 with `vennpie`. I created a
 PR, <https://github.com/hms-dbmi/UpSetR/pull/112>, to make it possible to
-capture `upset` output and convert it to `grob` object. I thought it would be more
+capture `upset` output and be able to be converted to `grob` object. I thought it would be more
 easy if I further convert the object to `ggplot` then I can directly use
 `ggimage::geom_subview()` to embed `ggvenn` inside `upset` plot. With this idea,
 I started to implement `as.ggplot` function.
