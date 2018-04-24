@@ -9,6 +9,8 @@
 ##' @importFrom ggplot2 theme_void
 ##' @return ggplot object
 ##' @export
+##' @examples
+##' as.ggplot(~barplot(1:10))
 ##' @author Guangchuang Yu
 as.ggplot <- function(plot) {
     ## plot_expr <- quo_name(enexpr(plot))

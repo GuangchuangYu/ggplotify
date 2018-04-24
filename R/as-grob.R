@@ -7,6 +7,8 @@
 ##' @export
 ##' @importFrom ggplot2 ggplotGrob
 ##' @importFrom rvcheck get_fun_from_pkg
+##' @examples
+##' as.grob(~barplot(1:10))
 ##' @author guangchuang yu
 as.grob <- function(plot) {
     ## plot_expr <- quo_name(enexpr(plot))

@@ -15,6 +15,9 @@ grob object
 \description{
 convert a plot to grob object
 }
+\examples{
+as.grob(~barplot(1:10))
+}
 \author{
 guangchuang yu
 }

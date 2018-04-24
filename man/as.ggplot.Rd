@@ -15,6 +15,9 @@ ggplot object
 \description{
 convert plot to ggplot object
 }
+\examples{
+as.ggplot(~barplot(1:10))
+}
 \author{
 Guangchuang Yu
 }
