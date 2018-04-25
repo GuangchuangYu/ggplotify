@@ -1,11 +1,15 @@
+# ggplotify 0.0.3
+
++ support converting `magick-image` to `grob` and `ggplot` object.  (2018-04-25, Wed)
++ redefined `as.grob` as S3 Generics.
+
 # ggplotify 0.0.2
 
-+ add NEWS.md, README and example in man <2018-04-24, Tue>
++ add NEWS.md, README and example in man (2018-04-24, Tue)
 
 # ggplotify 0.0.1
 
-+ `as.grob` by combining `ggimage::toGrob` and `base2grob` package (will be
-  deprecated)
++ `as.grob` by combining `ggimage::toGrob` and `base2grob` package which was deprecated
   - `as.grob` can convert base plot or grid plot (e.g. vcd, UpSetR packages) to
     `grob` object
 + `as.ggplot` supports all `as.grob`-supported plots.
