@@ -68,6 +68,13 @@ as.grob.trellis <- function(plot) {
 as.grob.upset <- as.grob.trellis
 
 ##' @rdname as-grob
+##' @method as.grob pheatmap
+##' @export
+as.grob.pheatmap <- function(plot) {
+    plot$gtable
+}
+
+##' @rdname as-grob
 ##' @usage NULL
 ##' @method as.grob magick-image
 ##' @importFrom grid rasterGrob

@@ -9,6 +9,7 @@
 \alias{as.grob.meme}
 \alias{as.grob.trellis}
 \alias{as.grob.upset}
+\alias{as.grob.pheatmap}
 \alias{as.grob.magick-image}
 \alias{as.grob.grob}
 \title{as.grob}
@@ -28,6 +29,8 @@ as.grob(plot)
 \method{as.grob}{trellis}(plot)
 
 \method{as.grob}{upset}(plot)
+
+\method{as.grob}{pheatmap}(plot)
 
 \method{as.grob}{grob}(plot)
 }

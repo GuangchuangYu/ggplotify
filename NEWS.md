@@ -1,5 +1,7 @@
 # ggplotify 0.0.3
 
++ `as.grob` method for `pheatmap` object (2018-08-03, Fri)
+    - thanks to my PR: <https://github.com/raivokolde/pheatmap/pull/43>
 + support converting `magick-image` to `grob` and `ggplot` object.  (2018-04-25, Wed)
 + redefined `as.grob` as S3 Generics.
 
