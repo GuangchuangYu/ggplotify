@@ -1,3 +1,8 @@
+# ggplotify 0.0.4
+
++ `as.grob` method for `eulergram` (defined in eulerr package) object (2019-05-09, Thu)
+  - <https://github.com/GuangchuangYu/ggplotify/issues/5>
+
 # ggplotify 0.0.3
 
 + `as.grob` method for `pheatmap` object (2018-08-03, Fri)

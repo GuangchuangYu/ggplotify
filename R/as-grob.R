@@ -63,6 +63,11 @@ as.grob.trellis <- function(plot) {
 }
 
 ##' @rdname as-grob
+##' @method as.grob eulergram
+##' @export
+as.grob.eulergram <- as.grob.trellis
+
+##' @rdname as-grob
 ##' @method as.grob upset
 ##' @export
 as.grob.upset <- as.grob.trellis
@@ -110,5 +115,4 @@ base2grob <- function(x) {
 
     grid.grabExpr(grid.echo(plot_fun(x)), warn=0)
 }
-
 
