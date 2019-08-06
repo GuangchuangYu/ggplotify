@@ -29,8 +29,7 @@
 
 I figured out a way to embed base plot (`vennpie`) to grid plot (`upset`) when
 developing `upsetplot` function in `ChIPseeker` package for visualizing overlap
-of ChIPseq data in
-2015, <http://guangchuangyu.github.io/2015/07/upsetplot-in-chipseeker/>.
+of ChIPseq data in 2015, <http://guangchuangyu.github.io/2015/07/upsetplot-in-chipseeker/>.
 
 ## embed ggplot (2015, ggtree and ggimage)
 

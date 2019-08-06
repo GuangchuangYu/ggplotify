@@ -17,8 +17,7 @@ them to ‘ggplot’ objects.
 
 Guangchuang YU
 
-School of Basic Medical Sciences, Southern Medical
-University
+School of Basic Medical Sciences, Southern Medical University
 
 <https://guangchuangyu.github.io>
 
