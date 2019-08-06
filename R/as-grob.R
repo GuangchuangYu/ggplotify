@@ -64,8 +64,11 @@ as.grob.trellis <- function(plot) {
 
 ##' @rdname as-grob
 ##' @method as.grob eulergram
+##' @importFrom grid grid.draw
 ##' @export
-as.grob.eulergram <- as.grob.trellis
+as.grob.eulergram <- function(plot) {
+    grid::grid.grabExpr(grid.draw(plot))
+}
 
 ## ComplexHeatmap
 ##' @rdname as-grob
