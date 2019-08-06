@@ -67,6 +67,12 @@ as.grob.trellis <- function(plot) {
 ##' @export
 as.grob.eulergram <- as.grob.trellis
 
+## ComplexHeatmap
+##' @rdname as-grob
+##' @method as.grob Heatmap
+##' @export
+as.grob.Heatmap <- as.grob.trellis
+
 ##' @rdname as-grob
 ##' @method as.grob upset
 ##' @export
