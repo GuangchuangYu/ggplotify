@@ -125,3 +125,14 @@ base2grob <- function(x) {
     grid.grabExpr(grid.echo(plot_fun(x)), warn=0)
 }
 
+##' convert grid plot to grob object
+##'
+##'
+##' @title grid2grob
+##' @param plot_fun plot function call
+##' @return grob object
+##' @export
+##' @author Guangchuang Yu
+grid2grob <- function(plot_fun) {
+    grid.grabExpr(plot_fun)
+}
