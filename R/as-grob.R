@@ -21,7 +21,7 @@ as.grob.expression <- function(plot) {
                   error = function(e) NULL)
 
     if (is.null(p)) {
-        p <- grid::grid.grabExpr(plot_fun(plot)(), warn=0)
+        p <- grid2grob(plot_fun(plot)())
     }
 
     return(p)
@@ -59,7 +59,7 @@ as.grob.meme <- function(plot) {
 ##' @method as.grob trellis
 ##' @export
 as.grob.trellis <- function(plot) {
-    grid::grid.grabExpr(print(plot))
+    grid2grob(print(plot))
 }
 
 ##' @rdname as-grob
@@ -67,7 +67,7 @@ as.grob.trellis <- function(plot) {
 ##' @importFrom grid grid.draw
 ##' @export
 as.grob.eulergram <- function(plot) {
-    grid::grid.grabExpr(grid.draw(plot))
+    grid2grob(grid.draw(plot))
 }
 
 ## ComplexHeatmap
@@ -122,7 +122,7 @@ base2grob <- function(x) {
     old.par=par(no.readonly=TRUE)
     on.exit(suppressWarnings(par(old.par, no.readonly=TRUE)))
 
-    grid.grabExpr(grid.echo(plot_fun(x)), warn=0)
+    grid2grob(grid.echo(plot_fun(x)))
 }
 
 ##' convert grid plot to grob object
@@ -134,5 +134,5 @@ base2grob <- function(x) {
 ##' @export
 ##' @author Guangchuang Yu
 grid2grob <- function(plot_fun) {
-    grid.grabExpr(plot_fun)
+    grid::grid.grabExpr(plot_fun, warn=0)
 }
