@@ -1,23 +1,23 @@
-plot_fun <- function(x) {
-    if (!inherits(x, "expression") &&
-        !inherits(x, "formula")    &&
-        !inherits(x, "function")) {
+plot_fun <- function(.call) {
+    if (!inherits(.call, "expression") &&
+        !inherits(.call, "formula")    &&
+        !inherits(.call, "function")) {
 
         stop('Argument needs to be of class "expression", "formula", ',
            'or a function that plots to an R graphics device when called, ',
-           'but is a ', class(x))
+           'but is a ', class(.call))
     }
 
-    if (inherits(x, "formula")) {
+    if (inherits(.call, "formula")) {
         ## convert to expression
-        x <- parse(text=as.character(x)[2])
-    }
+        .call <- parse(text=as.character(.call)[2])
+    } 
 
     function() {
         set_par()
-        if (inherits(x, "function"))
-            return(x())
-        eval(x)
+        if (inherits(.call, "function"))
+            return(.call())
+        eval(.call)
     }
 }
 

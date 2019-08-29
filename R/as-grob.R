@@ -129,10 +129,10 @@ base2grob <- function(x) {
 ##'
 ##'
 ##' @title grid2grob
-##' @param plot_fun plot function call
+##' @param plot_call plot function call
 ##' @return grob object
 ##' @export
 ##' @author Guangchuang Yu
-grid2grob <- function(plot_fun) {
-    grid::grid.grabExpr(plot_fun, warn=0)
+grid2grob <- function(plot_call) {
+    grid::grid.grabExpr(plot_call, warn=0)
 }

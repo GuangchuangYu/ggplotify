@@ -4,10 +4,10 @@
 \alias{grid2grob}
 \title{grid2grob}
 \usage{
-grid2grob(plot_fun)
+grid2grob(plot_call)
 }
 \arguments{
-\item{plot_fun}{plot function call}
+\item{plot_call}{plot function call}
 }
 \value{
 grob object
