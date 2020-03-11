@@ -22,7 +22,7 @@ as.grob(plot)
 
 \method{as.grob}{formula}(plot)
 
-\method{as.grob}{function}(plot)
+\method{as.grob}{`function`}(plot)
 
 \method{as.grob}{ggplot}(plot)
 
