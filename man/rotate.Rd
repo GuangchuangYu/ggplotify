@@ -4,7 +4,7 @@
 \alias{rotate}
 \title{rotate}
 \usage{
-rotate(p, angle, scale = 0.9)
+rotate(p, angle, scale = 0.9, hjust = 0, vjust = 0)
 }
 \arguments{
 \item{p}{plot that supported by ggplotify to convert to ggplot object}
@@ -12,6 +12,10 @@ rotate(p, angle, scale = 0.9)
 \item{angle}{user selected angle}
 
 \item{scale}{amount to scale the plot (zoom in or zoom out)}
+
+\item{hjust}{horizontal adjustment}
+
+\item{vjust}{vertical adjustment}
 }
 \value{
 display figure with specific angle
