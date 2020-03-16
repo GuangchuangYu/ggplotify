@@ -1,3 +1,7 @@
+# ggplotify 0.0.5.991
+
++ `rotate` function to display plot at specific angle (2020-03-16, Mon)
+
 # ggplotify 0.0.5
 
 + `hjust` and `vjust` parameters in `as.ggplot` (2020-03-11, Wed)
