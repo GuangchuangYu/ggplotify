@@ -1,5 +1,7 @@
-# ggplotify 0.0.5.991
+# ggplotify 0.0.5.992
 
++ `aplot` object supported (2020-03-27, Fri)
+  - <https://github.com/YuLab-SMU/aplot>
 + angle parameter in `as.ggplot` (2020-03-16, Mon)
 
 # ggplotify 0.0.5

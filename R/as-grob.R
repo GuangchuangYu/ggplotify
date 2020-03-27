@@ -55,6 +55,11 @@ as.grob.meme <- function(plot) {
     memeGrob(plot)
 }
 
+as.grob.meme <- function(plot) {
+    aplotGrob <- get_fun_from_pkg("aplot", "aplotGrob")
+    aplotGrob(plot)
+}
+
 ##' @rdname as-grob
 ##' @method as.grob trellis
 ##' @export
