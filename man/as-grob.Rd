@@ -2,6 +2,7 @@
 % Please edit documentation in R/as-grob.R
 \name{as.grob}
 \alias{as.grob}
+\alias{as.grob.aplot}
 \alias{as.grob.expression}
 \alias{as.grob.formula}
 \alias{as.grob.function}
@@ -17,6 +18,8 @@
 \title{as.grob}
 \usage{
 as.grob(plot)
+
+\method{as.grob}{aplot}(plot)
 
 \method{as.grob}{expression}(plot)
 

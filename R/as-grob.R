@@ -14,6 +14,14 @@ as.grob <- function(plot) {
 }
 
 ##' @rdname as-grob
+##' @method as.grob aplot
+##' @export
+as.grob.aplot <- function(plot) {
+    aplotGrob <- getFromNamespace("aplotGrob", "aplot")
+    aplotGrob(plot)
+}
+
+##' @rdname as-grob
 ##' @method as.grob expression
 ##' @export
 as.grob.expression <- function(plot) {
@@ -53,11 +61,6 @@ as.grob.ggplot <- function(plot) {
 as.grob.meme <- function(plot) {
     memeGrob <- get_fun_from_pkg("meme", "memeGrob")
     memeGrob(plot)
-}
-
-as.grob.meme <- function(plot) {
-    aplotGrob <- get_fun_from_pkg("aplot", "aplotGrob")
-    aplotGrob(plot)
 }
 
 ##' @rdname as-grob
