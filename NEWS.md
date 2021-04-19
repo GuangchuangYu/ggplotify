@@ -1,4 +1,4 @@
-# ggplotify 0.0.5.992
+# ggplotify 0.0.6
 
 + `aplot` object supported (2020-03-27, Fri)
   - <https://github.com/YuLab-SMU/aplot>

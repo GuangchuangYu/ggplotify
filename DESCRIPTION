@@ -1,6 +1,6 @@
 Package: ggplotify
 Title: Convert Plot to 'grob' or 'ggplot' Object
-Version: 0.0.5.993
+Version: 0.0.6
 Authors@R: c(person("Guangchuang", "Yu", email = "guangchuangyu@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6485-8781")))
 Description: Convert plot function call (using expression or formula) to 'grob' or 'ggplot' object that compatible to the 'grid' and 'ggplot2' ecosystem. With this package, we are able to e.g. using 'cowplot' to align plots produced by 'base' graphics, 'ComplexHeatmap', 'eulerr', 'grid', 'lattice', 'magick', 'pheatmap', 'vcd' etc. by converting them to 'ggplot' objects.
 Depends: R (>= 3.4.0)
@@ -12,13 +12,16 @@ Imports:
     gridGraphics,
     rvcheck
 Suggests:
+    aplot,
     colorspace,
     cowplot,
     ggimage,
     knitr,
+    rmarkdown,
     lattice,
     prettydoc,
-    vcd
+    vcd,
+    utils
 VignetteBuilder: knitr
 ByteCompile: true
 License: Artistic-2.0

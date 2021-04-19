@@ -17,7 +17,7 @@ as.grob <- function(plot) {
 ##' @method as.grob aplot
 ##' @export
 as.grob.aplot <- function(plot) {
-    aplotGrob <- getFromNamespace("aplotGrob", "aplot")
+    aplotGrob <- utils::getFromNamespace("aplotGrob", "aplot")
     aplotGrob(plot)
 }
 
