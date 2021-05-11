@@ -22,6 +22,15 @@ as.grob.aplot <- function(plot) {
 }
 
 ##' @rdname as-grob
+##' @method as.grob patchwork
+##' @export
+as.grob.patchwork <- function(plot) {
+    patchworkGrob <- utils::getFromNamespace("patchworkGrob", "patchwork")
+    patchworkGrob(plot)
+}
+
+
+##' @rdname as-grob
 ##' @method as.grob expression
 ##' @export
 as.grob.expression <- function(plot) {

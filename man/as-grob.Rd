@@ -3,6 +3,7 @@
 \name{as.grob}
 \alias{as.grob}
 \alias{as.grob.aplot}
+\alias{as.grob.patchwork}
 \alias{as.grob.expression}
 \alias{as.grob.formula}
 \alias{as.grob.function}
@@ -20,6 +21,8 @@
 as.grob(plot)
 
 \method{as.grob}{aplot}(plot)
+
+\method{as.grob}{patchwork}(plot)
 
 \method{as.grob}{expression}(plot)
 

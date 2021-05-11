@@ -1,3 +1,7 @@
+# ggplotify 0.0.7
+
++ `patchwork` object supported (2021-05-11, Tue)
+
 # ggplotify 0.0.6
 
 + `aplot` object supported (2020-03-27, Fri)
