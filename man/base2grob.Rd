@@ -4,11 +4,13 @@
 \alias{base2grob}
 \title{base2grob}
 \usage{
-base2grob(x)
+base2grob(x, envir = parent.frame())
 }
 \arguments{
 \item{x}{expression or formula of base plot function call, e.g. expression(pie(1:5)) or ~plot(1:10, 1:10);
 or a function that plots to an R graphics device when called, e.g. function() plot(sqrt)}
+
+\item{envir}{environment to search variables}
 }
 \value{
 grob object

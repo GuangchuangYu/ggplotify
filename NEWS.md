@@ -1,3 +1,7 @@
+# ggplotify 0.0.8
+
++ allows passing `envir` to `base2grob` (2021-08-04, Wed, #11)
+
 # ggplotify 0.0.7
 
 + `patchwork` object supported (2021-05-11, Tue)
