@@ -7,6 +7,7 @@
 ##' @param hjust horizontal adjustment
 ##' @param vjust vertical adjustment
 ##' @param angle angle to rotate plot
+##' @param ... additional parameters passed to as.grob
 ##' @importFrom ggplot2 ggplot
 ##' @importFrom ggplot2 aes_
 ##' @importFrom ggplot2 geom_blank
@@ -20,7 +21,7 @@
 ##' @examples
 ##' as.ggplot(~barplot(1:10))
 ##' @author Guangchuang Yu
-as.ggplot <- function(plot, scale = 1, hjust = 0, vjust = 0, angle = 0) {
+as.ggplot <- function(plot, scale = 1, hjust = 0, vjust = 0, angle = 0, ...) {
     ## plot_expr <- quo_name(enexpr(plot))
     ## if (is.null(plot)) {
     ##     plot <- as.grob(plot_expr)
@@ -30,10 +31,11 @@ as.ggplot <- function(plot, scale = 1, hjust = 0, vjust = 0, angle = 0) {
         return(as.ggplot_internal(plot = plot,
                                   scale = scale,
                                   hjust = hjust,
-                                  vjust = vjust))
+                                  vjust = vjust,
+                                  ...))
     }
 
-    g <- grid2grob(print(as.ggplot_internal(plot),
+    g <- grid2grob(print(as.ggplot_internal(plot, ...),
                          newpage = TRUE,
                          vp = viewport(x = .5 + hjust,
                                        y = .5 + vjust,
@@ -45,7 +47,7 @@ as.ggplot <- function(plot, scale = 1, hjust = 0, vjust = 0, angle = 0) {
 }
 
 
-as.ggplot_internal <- function(plot, scale = 1, hjust = 0, vjust = 0) {
+as.ggplot_internal <- function(plot, scale = 1, hjust = 0, vjust = 0, ...) {
     ymin <- xmin <- 1 - scale
     xmax <- ymax <- scale
 
@@ -53,7 +55,7 @@ as.ggplot_internal <- function(plot, scale = 1, hjust = 0, vjust = 0) {
         geom_blank() +
         scale_x_continuous(limits = c(0,1), expand = c(0, 0)) +
         scale_y_continuous(limits = c(0,1), expand = c(0, 0)) +
-        annotation_custom(as.grob(plot),
+        annotation_custom(as.grob(plot, ...),
                           xmin = xmin + hjust,
                           xmax = xmax + hjust,
                           ymin = ymin + vjust,

@@ -1,3 +1,7 @@
+# ggplotify 0.0.8.991
+
++ `...` parameter in `as.ggplot` (2021-08-06, Fri)
+
 # ggplotify 0.0.8
 
 + allows passing `envir` to `base2grob` (2021-08-04, Wed, #11)
