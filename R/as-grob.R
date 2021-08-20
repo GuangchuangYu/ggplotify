@@ -65,7 +65,7 @@ as.grob.ggplot <- function(plot, ...) {
 }
 
 ##' @rdname as-grob
-##' @importFrom rvcheck get_fun_from_pkg
+##' @importFrom yulab.utils get_fun_from_pkg
 ##' @method as.grob meme
 ##' @export
 as.grob.meme <- function(plot, ...) {
