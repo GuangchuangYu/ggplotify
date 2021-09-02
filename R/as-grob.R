@@ -23,6 +23,13 @@ as.grob.aplot <- function(plot, ...) {
 }
 
 ##' @rdname as-grob
+##' @method as.grob bbplot
+##' @export
+as.grob.bbplot <- function(plot, ...) {
+    base2grob(~print(plot))
+}
+
+##' @rdname as-grob
 ##' @method as.grob patchwork
 ##' @export
 as.grob.patchwork <- function(plot, ...) {

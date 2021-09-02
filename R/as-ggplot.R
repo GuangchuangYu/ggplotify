@@ -60,6 +60,8 @@ as.ggplot_internal <- function(plot, scale = 1, hjust = 0, vjust = 0, ...) {
                           xmax = xmax + hjust,
                           ymin = ymin + vjust,
                           ymax = ymax + vjust)  +
-        theme_void()
+        theme_void() 
 }
+
+
 

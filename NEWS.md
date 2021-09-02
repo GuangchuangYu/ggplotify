@@ -1,3 +1,7 @@
+# ggplotify 0.1.0
+
++ supports `bbplot` object (2021-09-02, Thu)
+
 # ggplotify 0.0.9
 
 + import `yulab.utils` (2021-08-20, Fri)

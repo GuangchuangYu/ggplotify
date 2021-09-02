@@ -34,7 +34,7 @@ set_par <- function() {
     ## https://github.com/wilkelab/cowplot/issues/69#issuecomment-318866413
     par(xpd = NA, # switch off clipping, necessary to always see axis labels
         bg = "transparent", # switch off background to avoid obscuring adjacent plots
-        oma = c(2, 2, 0, 0), # move plot to the right and up
+        #oma = c(2, 2, 0, 0), # move plot to the right and up
         mgp = c(2, 1, 0) # move axis labels closer to axis
         )
 }
