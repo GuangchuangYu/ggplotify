@@ -5,6 +5,7 @@
 \alias{as.grob.aplot}
 \alias{as.grob.bbplot}
 \alias{as.grob.patchwork}
+\alias{as.grob.gglist}
 \alias{as.grob.expression}
 \alias{as.grob.formula}
 \alias{as.grob.function}
@@ -26,6 +27,8 @@ as.grob(plot, ...)
 \method{as.grob}{bbplot}(plot, ...)
 
 \method{as.grob}{patchwork}(plot, ...)
+
+\method{as.grob}{gglist}(plot, ...)
 
 \method{as.grob}{expression}(plot, ...)
 

@@ -1,3 +1,7 @@
+# ggplotify 0.1.1
+
++ supports `gglist` object (2023-06-26, Mon)
+
 # ggplotify 0.1.0
 
 + supports `bbplot` object (2021-09-02, Thu)
@@ -52,7 +56,7 @@
 + `as.ggplot` supports all `as.grob`-supported plots.
 
 
-# History
+# History of ggplot 0.0.0 
 
 ## embed base to grid plot (2015, ChIPseeker)
 

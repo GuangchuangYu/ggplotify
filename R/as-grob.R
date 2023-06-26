@@ -37,6 +37,13 @@ as.grob.patchwork <- function(plot, ...) {
     patchworkGrob(plot)
 }
 
+##' @rdname as-grob
+##' @method as.grob gglist
+##' @export
+as.grob.gglist <- function(plot, ...) {
+    gglistGrob <- utils::getFromNamespace("gglistGrob", "aplot")
+    gglistGrob(plot)
+}
 
 ##' @rdname as-grob
 ##' @method as.grob expression
