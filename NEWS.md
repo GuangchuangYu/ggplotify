@@ -1,3 +1,7 @@
+# ggplotify 0.1.1.001
+
++ support `oncoplot` object in 'aplot' and 'aplotExtra' (2023-07-18, Tue)
+
 # ggplotify 0.1.1
 
 + supports `gglist` object (2023-06-26, Mon)

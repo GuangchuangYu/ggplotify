@@ -23,6 +23,14 @@ as.grob.aplot <- function(plot, ...) {
 }
 
 ##' @rdname as-grob
+##' @method as.grob oncoplot
+##' @export
+as.grob.oncoplot <- function(plot, ...) {
+    oncoplotGrob <- utils::getFromNamespace("oncoplotGrob", "aplot")
+    oncoplotGrob(plot)
+}
+
+##' @rdname as-grob
 ##' @method as.grob bbplot
 ##' @export
 as.grob.bbplot <- function(plot, ...) {
