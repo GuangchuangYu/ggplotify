@@ -3,6 +3,7 @@
 \name{as.grob}
 \alias{as.grob}
 \alias{as.grob.aplot}
+\alias{as.grob.oncoplot}
 \alias{as.grob.bbplot}
 \alias{as.grob.patchwork}
 \alias{as.grob.gglist}
@@ -23,6 +24,8 @@
 as.grob(plot, ...)
 
 \method{as.grob}{aplot}(plot, ...)
+
+\method{as.grob}{oncoplot}(plot, ...)
 
 \method{as.grob}{bbplot}(plot, ...)
 
