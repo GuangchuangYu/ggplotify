@@ -1,5 +1,6 @@
 # ggplotify 0.1.3
 
++ `as.grob` for `tmap` object, defined in the 'tmap' package (2025-09-20, Sat) 
 + replace `aes_` with `aes` (2025-09-20, Sat)
 
 # ggplotify 0.1.2

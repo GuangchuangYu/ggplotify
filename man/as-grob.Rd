@@ -16,6 +16,7 @@
 \alias{as.grob.eulergram}
 \alias{as.grob.Heatmap}
 \alias{as.grob.upset}
+\alias{as.grob.tmap}
 \alias{as.grob.pheatmap}
 \alias{as.grob.magick-image}
 \alias{as.grob.grob}
@@ -50,6 +51,8 @@ as.grob(plot, ...)
 \method{as.grob}{Heatmap}(plot, ...)
 
 \method{as.grob}{upset}(plot, ...)
+
+\method{as.grob}{tmap}(plot, ...)
 
 \method{as.grob}{pheatmap}(plot, ...)
 

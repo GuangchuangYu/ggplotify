@@ -122,6 +122,12 @@ as.grob.Heatmap <- as.grob.trellis
 as.grob.upset <- as.grob.trellis
 
 ##' @rdname as-grob
+##' @method as.grob tmap
+##' @export
+as.grob.tmap <- as.grob.trellis
+
+
+##' @rdname as-grob
 ##' @method as.grob pheatmap
 ##' @export
 as.grob.pheatmap <- function(plot, ...) {
