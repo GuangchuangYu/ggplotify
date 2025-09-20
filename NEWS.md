@@ -1,3 +1,7 @@
+# ggplotify 0.1.3
+
++ replace `aes_` with `aes` (2025-09-20, Sat)
+
 # ggplotify 0.1.2
 
 + support `oncoplot` object in 'aplot' and 'aplotExtra' (2023-07-18, Tue)
